@@ -69,7 +69,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 400px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
@@ -85,12 +85,25 @@ h2 {
     margin-bottom: 10px;
 }
 
-#about {
-    padding: 20px 10px;
+#about,
+#gallery{
+    padding: 20px;
 }
 
 #about p {
     text-indent: 25px;
+}
+
+#about a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark-green);
+}
+
+#about,
+#message-form {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 #gallery-photos {
@@ -103,4 +116,80 @@ h2 {
     border: 5px solid var(--dark-green);   
     height: 175px;
     width: auto;
+}
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-div:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.img-text {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+
+.img-text p {
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: .75rem;
+}
+
+#message-form {
+    padding: 20px 5px;
+}
+
+form {
+    margin: 10px;
+    padding: 20px 10px;
+    border: 2px solid var(--green-white);
+    color: var(--green-white);
+}
+
+form h3,
+form p {
+    text-align: center;
+}
+
+label {
+    font-weight: 500;
+}
+
+form h3 {
+    margin: 5px 0px;
+}
+
+form p:last-of-type {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: var(--green-white);
+    border: none;
+    border-radius: 5px;
+    margin: 5px auto 15px;
+    padding: 5px 7px;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    color: var(--dark-green);
+}
+
+textarea {
+    height: 125px;
+}
+
+footer {
+    padding: 25px 0px;
+    text-align: center;
+    color: var(--dark-green);
 }
