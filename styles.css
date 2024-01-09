@@ -32,8 +32,8 @@ form {
 
 header {
     color: var(--green-white);
-    /* text-align: center; */
-    /* letter-spacing: 1px; */
+    text-align: center;
+    letter-spacing: 1px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,13 +48,14 @@ header img {
     margin-left: 12px;
 }
 
-#header-text h1 {
+h1 {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 #header-text p {
     font-size: 1rem;
+    font-weight: 600;
 }
 
 nav {
@@ -83,25 +84,37 @@ nav a {
 h2 {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
 #about,
-#gallery{
+#custom-requests,
+footer {
     padding: 20px;
 }
 
-#about p {
+#gallery {
+    padding: 20px 10px;
+}
+
+#about p,
+#custom-requests p {
     text-indent: 25px;
 }
 
-#about a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--dark-green);
+p {
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 #about,
-#message-form {
+#message-form,
+#custom-requests {
     max-width: 500px;
     margin: 0 auto;
 }
@@ -140,7 +153,7 @@ h2 {
 }
 
 .description {
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 #message-form {
@@ -189,7 +202,31 @@ textarea {
 }
 
 footer {
-    padding: 25px 0px;
     text-align: center;
     color: var(--dark-green);
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark-green);
+}
+
+footer p:last-of-type {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+#contact-icons {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+svg {
+    fill: var(--green-white);
+    height: 20px;
+    stroke: var(--green-white);
+    margin-right: 5px;
 }
