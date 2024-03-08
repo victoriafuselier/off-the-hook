@@ -209,7 +209,7 @@ textarea {
     height: 125px;
 }
 
-button {
+#submitButton {
     background-color: indianred;
     color: white;
     padding: 15px 40px;
