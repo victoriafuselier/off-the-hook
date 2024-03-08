@@ -42,7 +42,7 @@ header {
 }
 
 header img {
-    height: 50px;
+    height: 70px;
     width: auto;
     /* margin-bottom: 0; */
     margin-left: 12px;
@@ -50,11 +50,11 @@ header img {
 
 h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 #header-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -70,7 +70,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 350px;
+    max-width: 550px;
     margin: 0 auto;
 }
 
@@ -115,7 +115,7 @@ footer {
 
 p {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #about,
@@ -223,6 +223,7 @@ textarea {
 footer {
     text-align: center;
     color: var(--dark-green);
+    padding-bottom: 50px;
 }
 
 footer p:last-of-type {
