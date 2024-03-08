@@ -105,7 +105,7 @@ footer {
 }
 
 #gallery {
-    padding: 20px 10px;
+    padding: 20px;
 }
 
 #about p,
@@ -125,13 +125,26 @@ p {
     margin: 0 auto;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    row-gap: 20px;
+    justify-items: center;
+    max-width: 800px;
+    margin: 5vh auto;
+}
+
+.gallery-photo {
+    justify-self: center;
+}
+
 #gallery-photos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#gallery-photos img {
+#gallery img {
     border: 5px solid var(--dark-green);   
     height: 175px;
     width: auto;
@@ -145,21 +158,6 @@ p {
 
 .img-div:not(:last-of-type) {
     margin-bottom: 30px;
-}
-
-.img-text {
-    text-align: center;
-    font-weight: 600;
-    margin-top: 10px;
-    font-size: 1.25rem;
-}
-
-.img-text p {
-    margin-bottom: 5px;
-}
-
-.description {
-    font-size: 1rem;
 }
 
 #message-form {
