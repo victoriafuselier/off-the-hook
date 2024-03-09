@@ -285,3 +285,9 @@ footer svg {
     stop-color: var(--dark-green);
     lighting-color: var(--dark-green);
 }
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: none;
+    }
+}
