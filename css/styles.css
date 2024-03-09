@@ -90,7 +90,7 @@ a {
 
 h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 1.75rem;
 }
 
@@ -109,14 +109,15 @@ footer {
     padding: 0px 10px;
 }
 
-#about p,
-#custom-requests p {
-    text-indent: 25px;
-}
-
 p {
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+#about p,
+#custom-requests p {
+    margin-bottom: 10px;
+    text-indent: 25px;
 }
 
 #about,
@@ -139,6 +140,7 @@ p {
     justify-items: center;
     max-width: 1000px;
     margin: 5vh auto;
+    padding: 0px 20px;
 }
 
 .gallery-photo {
@@ -153,7 +155,7 @@ p {
 
 #gallery img {
     border: 5px solid var(--dark-green);   
-    height: 175px;
+    height: 200px;
     width: auto;
 }
 
@@ -162,17 +164,7 @@ p {
 }
 
 #gallery a:hover {
-    transform: scale(1.2);
-}
-
-.img-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img-div:not(:last-of-type) {
-    margin-bottom: 30px;
+    transform: scale(1.05);
 }
 
 #message-form {
