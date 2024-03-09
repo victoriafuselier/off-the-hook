@@ -173,7 +173,7 @@ p {
 form {
     max-width: 500px;
     margin: 10px;
-    padding: 30px 40px;
+    padding: 30px 20px;
     border: 2px solid var(--green-white);
     color: var(--green-white);
     display: flex;
@@ -199,18 +199,27 @@ form p:last-of-type {
     margin-bottom: 20px;
 }
 
+form p {
+    font-size: 1rem;
+}
+
 input,
 textarea {
     width: 100%;
     background-color: var(--green-white);
     border: none;
     border-radius: 5px;
-    margin: 5px auto 30px;
-    padding: 15px 12px;
+    margin: 5px auto 20px;
+    padding: 10px;
     font-weight: 600;
     /* letter-spacing: 1px; */
     color: var(--dark-green);
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 5px solid yellow;
 }
 
 textarea {
