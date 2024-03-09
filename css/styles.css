@@ -91,7 +91,7 @@ a {
 h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 
 h3 {
@@ -99,47 +99,42 @@ h3 {
     margin-bottom: 10px;
 }
 
-#about,
-#custom-requests,
+section,
 footer {
     padding: 30px 20px;
 }
 
-#gallery {
-    padding: 0px 10px;
-}
-
 p {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-#about p,
-#custom-requests p {
+#about p:not(:last-of-type),
+#requests p:not(:last-of-type) {
     margin-bottom: 30px;
 }
 
 #about,
 #message-form,
-#custom-requests {
+#requests {
     margin-right: auto;
     margin-left: auto;
     max-width: 500px;
 }
 
 #about,
-#custom-requests {
-    max-width: 600px;
+#requests {
+    padding: 30px 60px;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     row-gap: 20px;
+    column-gap: 20px;
     justify-items: center;
     max-width: 1000px;
-    margin: 5vh auto;
-    padding: 0px 20px;
+    margin: 0 auto;
 }
 
 .gallery-photo {
@@ -154,7 +149,7 @@ p {
 
 #gallery img {
     border: 5px solid var(--dark-green);   
-    height: 200px;
+    height: 120px;
     width: auto;
 }
 
@@ -168,6 +163,10 @@ p {
 
 #message-form {
     padding: 20px 5px;
+}
+
+#message-form h2 {
+    font-size: 1.5rem;
 }
 
 form {
@@ -223,7 +222,7 @@ textarea:focus {
 }
 
 textarea {
-    height: 125px;
+    height: 75px;
 }
 
 #submitButton {
@@ -287,5 +286,80 @@ footer svg {
 @media screen and (min-width: 768px) {
     nav {
         display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    #gallery img {
+        height: 200px;
+    }
+
+    textarea {
+        height: 125px;
+    }
+
+    #about,
+    #requests {
+        padding: 30px;
+    }
+
+    #about {
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main {
+        display: grid;
+        grid-template-areas:
+            "about about"
+            "gallery gallery"
+            "requests message-form";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #about {
+        grid-area: about;
+        margin: 0;
+    }
+
+    #requests {
+        grid-area: requests;
+        margin: 0;
+    }
+
+    #gallery {
+        grid-area: gallery;
+        margin: 0;
+        align-self: center;
+    }
+    
+    #message-form {
+        grid-area: message-form;
+        margin: 25px 0;
+        width: 550px;
+    }
+        
+    #about p,
+    #requests p {
+        font-size: 1.2rem;
+    }
+
+    #about h2,
+    #requests h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery {
+        column-gap: 50px;
+    }
+
+    #gallery img {
+        height: 250px;
     }
 }
