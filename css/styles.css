@@ -149,7 +149,7 @@ p {
 
 #gallery img {
     border: 5px solid var(--dark-green);   
-    height: 150px;
+    height: 120px;
     width: auto;
 }
 
