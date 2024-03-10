@@ -358,8 +358,4 @@ footer svg {
     .gallery {
         column-gap: 50px;
     }
-
-    #gallery img {
-        height: 250px;
-    }
 }
