@@ -358,4 +358,8 @@ footer svg {
     .gallery {
         column-gap: 50px;
     }
+    
+    #about {
+        max-width: 800px;
+    }
 }
