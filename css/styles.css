@@ -38,7 +38,7 @@ header {
     flex-direction: row;
     justify-content: center;
     padding: 20px 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 header img {
@@ -62,7 +62,7 @@ nav {
     padding: 20px 0px;
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: var(--dark-brunswick-green);
     z-index: 3;
 }
