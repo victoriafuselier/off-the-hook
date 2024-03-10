@@ -25,10 +25,6 @@ body {
     color: var(--dark-green);
 }
 
-main {
-    width: 100vw;
-}
-
 header,
 form {
     background-color: var(--dark-green);
